@@ -17,7 +17,9 @@ $ brew install skiptools/skip/swift-android-toolchain@6.0
 or by using the [Skip](https://skip.tools) command:
 
 ```
+$ brew install skiptools/skip/skip
 $ skip android sdk install
+$ skip checkup --native
 ```
 
 Both these commands will install the corresponding Swift OSS
@@ -45,7 +47,7 @@ command corresponding to the toolchain
 
 ## Checking Installed Versions
 
-You can also list the installed versions of the SDK with:
+You can list the installed versions of the SDK with:
 
 ```
 $ swift sdk list
