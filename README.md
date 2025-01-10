@@ -27,13 +27,13 @@ toolchain, which is required to match the version
 of the Android SDK:
 
 ```
-$ ls ~/Library/Developer/Toolchains/ ~/.swiftpm/swift-sdks/
-
-~/.swiftpm/swift-sdks/:
-swift-6.0.3-RELEASE-android-24-0.1.artifactbundle
+$ ls ~/Library/Developer/Toolchains/ ~/Library/org.swift.swiftpm/swift-sdks/
 
 ~/Library/Developer/Toolchains/:
 swift-6.0.3-RELEASE.xctoolchain
+
+~/Library/org.swift.swiftpm/swift-sdks/:
+swift-6.0.3-RELEASE-android-24-0.1.artifactbundle
 ```
 
 ## Installing on Linux
