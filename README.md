@@ -2,7 +2,7 @@
 
 This is a swift cross-compilation toolchain for Android.
 It publishes release and development builds from the
-[swift-android-sdk](https://github.com/finagolfin/swift-android-sdk)
+[swift-android-sdk](https://github.com/swift-android-sdk/swift-android-sdk)
 project.
 
 ## Installing on macOS
@@ -75,4 +75,11 @@ to build and test Swift packages on Android from macOS or Linux runners:
   uses: skiptools/swift-android-action@v2
 ```
 
+## Releasing new versions
+
+Download an SDK from the Actions builder and run the script:
+
+```
+scripts/release_toolchain.sh ~/Downloads/swift-6.1-DEVELOPMENT-SNAPSHOT-2025-03-12-a-android-24-0.1.artifactbundle.tar.gz.zip
+```
 
