@@ -11,7 +11,7 @@ The latest version can be installed and updated on macOS with
 the [Homebrew](https://brew.sh) command:
 
 ```
-$ brew install skiptools/skip/swift-android-toolchain@6.0
+$ brew install skiptools/skip/swift-android-toolchain@6.1
 ```
 
 or by using the [Skip](https://skip.tools) command:
@@ -30,10 +30,10 @@ of the Android SDK:
 $ ls ~/Library/Developer/Toolchains/ ~/Library/org.swift.swiftpm/swift-sdks/
 
 ~/Library/Developer/Toolchains/:
-swift-6.0.3-RELEASE.xctoolchain
+swift-6.1-RELEASE.xctoolchain
 
 ~/Library/org.swift.swiftpm/swift-sdks/:
-swift-6.0.3-RELEASE-android-24-0.1.artifactbundle
+swift-6.1-RELEASE-android-24-0.1.artifactbundle
 ```
 
 ## Installing on Linux
@@ -52,13 +52,13 @@ You can list the installed versions of the SDK with:
 ```
 $ swift sdk list
 
-swift-6.0.3-RELEASE-android-24-0.1
+swift-6.1-RELEASE-android-24-0.1
 ```
 
 Any particular version can be removed with:
 
 ```
-$ swift sdk remove swift-6.0.3-RELEASE-android-24-0.1
+$ swift sdk remove swift-6.1-RELEASE-android-24-0.1
 ```
 
 ## GitHub Actions
