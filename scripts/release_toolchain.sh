@@ -46,7 +46,7 @@ LOCAL_ARTIFACTNAME=$(basename ${ARTIFACTBUNDLE} .tar.gz)
 SDKNAME=$(echo ${SDKNAME} | sed 's;-RELEASE$;;g')
 
 # the swiftly name for the SDK release
-SWIFTLY_NAME=$(echo "${SDKNAME}" | tr '[A-Z]' '[a-z]' | sed 's;-development-snapshot-;-snapshot-;g' | sed 's;development-snapshot-;main-snapshot-;g')
+SWIFTLY_NAME=$(echo "${SDKNAME}" | tr '[A-Z]' '[a-z]' | sed 's;-development-snapshot-;-snapshot-;g' | sed 's;development-snapshot-;main-snapshot-;g' | sed 's;-a-.*;-a;g')
 
 echo "$PROG: Creating release for SDK: $SDKNAME"
 
@@ -54,7 +54,7 @@ NOTES_FILE=$(mktemp)
 cat > ${NOTES_FILE} << EOF
 ### Installing the Swift Android SDK
 
-First install the matching Swift \`${SDKNAME}\` toolchain from https://swift.org/download/#releases and add it to your PATH, or by using [swiftly](https://www.swift.org/install/):
+First install the matching Swift \`${SWIFTLY_NAME}\` toolchain from https://swift.org/download/#releases and add it to your PATH, or by using [swiftly](https://www.swift.org/install/):
 
 \`\`\`
 swiftly install ${SWIFTLY_NAME}
