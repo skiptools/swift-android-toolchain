@@ -14,7 +14,7 @@ the [Homebrew](https://brew.sh) command:
 $ brew install skiptools/skip/swift-android-toolchain@6.1
 ```
 
-or by using the [Skip](https://skip.tools) command:
+or by using the [Skip](https://skip.dev) command:
 
 ```
 $ brew install skiptools/skip/skip
